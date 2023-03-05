@@ -12,7 +12,13 @@ public class DetalleProductoPagina extends Object{
             .located(By.xpath("//span[contains(text(),'+')]"));
 
     public static final Target BTN_GARANTIA = Target.the("boton aumentar garantia")
-            .located(By.xpath("//span[contains(@class,'jsx-638735123')]"));
+            .located(By.xpath("//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/span[1]"));
+
+    public static final Target BTN_BOLSA_COMPRA = Target.the("boton bolsa de compra")
+            .located(By.xpath("//a[@id='linkButton']"));
+
+    public static final Target BTN_RESUMEN_COMPRA = Target.the("boton resumen de compra")
+            .located(By.xpath("//button[contains(text(),'Ir a comprar')]"));
 
 
 
